@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
 }
-
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
@@ -11,7 +10,6 @@ body {
   min-width: 576px;
 }
 main {
-  /* margin: 1% auto; */
   padding: 0px 1%;
 }
 section {
@@ -54,12 +52,10 @@ ul {
 }
 .content {
   display: flex;
-  /* justify-content: ; */
   flex-wrap: wrap;
   margin-left: 200px;
   width: 100%;
 }
-
 .item-container {
   width: 230px;
   height: 350px;
@@ -73,14 +69,12 @@ ul {
   flex-direction: column;
   justify-content: space-around;
 }
-
 .item-container .card-img {
   width: 228px;
   height: 200px;
   display: block;
   margin: 0 auto;
 }
-
 .item-container .card-title {
   text-align: center;
 }
@@ -88,7 +82,6 @@ ul {
   font-size: 0.8rem;
   padding: 2px;
 }
-
 .item-container .card-footer {
   display: flex;
   padding: 2px;
@@ -103,10 +96,7 @@ ul {
 .item-container .card-footer .price-rating {
   flex: 1;
   font-size: 1.2rem;
-  /* display: flex;
-    align-items: center; */
 }
-
 .item-container .card-footer .price-rating div i {
   color: red;
   font-size: 0.8rem;
