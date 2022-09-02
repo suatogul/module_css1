@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+main {
+  min-height: 100vh;
+  min-width: 576px;
+  display: flex;
+  align-items: flex-end;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+footer {
+  color: white;
+  width: 100%;
+}
+footer h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  background-color: #262626;
+}
+.lorem-icons {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.lorem-icons .lorem-text {
+  font-size: 1.1em;
+  line-height: 2em;
+  color: #c3c3c3;
+}
+.lorem-icons .icons {
+  min-width: 250px;
+}
+.lorem-icons .icons ul {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2em;
+  margin: 1em;
+}
+.lorem-icons .icons ul li:first-child {
+  color: #4267b2;
+}
+.lorem-icons .icons ul li:nth-child(2) {
+  color: #1da1f2;
+}
+.lorem-icons .icons ul li:nth-child(3) {
+  color: #0077b5;
+}
+.lorem-icons .icons ul li:nth-child(4) {
+  color: #db4a39;
+}
+.lorem-icons .icons ul li:last-child {
+  color: #ff0000;
+}
+.somelinks {
+  display: flex;
+  justify-content: space-evenly;
+  flex: 2;
+}
+.somelinks li {
+  margin-bottom: 1em;
+}
+.somelinks li a {
+  padding: 5px;
+  margin-bottom: 1em;
+  color: #8e8e8e;
+}
+.somelinks li a:hover {
+  color: #eeeeee;
+}
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.newsletter .email input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  border-radius: 5px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.2em;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.newsletter .email input:hover {
+  -webkit-box-shadow: 0px 0px 4px 0px #ffffff;
+  box-shadow: 0px 0px 4px 0px #ffffff;
+}
+.newsletter .email input:focus {
+  -webkit-box-shadow: inset 0px 0px 4px 0px #000000;
+  box-shadow: inset 0px 0px 4px 0px #000000;
+}
+.newsletter .button-sub button {
+  width: 100%;
+  height: 40px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(267deg, rgba(255, 255, 255, 1) 0%, rgba(255, 213, 123, 1) 100%);
+  font-size: 1.3em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.newsletter .button-sub button:hover {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(267deg, rgba(255, 255, 255, 1) 0%, rgba(203, 138, 0, 1) 100%);
+}
+
+.newsletter .button-sub button:active {
+  background: rgb(203, 138, 0);
+  background: linear-gradient(267deg, rgba(203, 138, 0, 1) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+  background-color: black;
+}
+.footer-bottom .footer-navlinks ul {
+  display: flex;
+}
+.footer-bottom .footer-navlinks .nav-items a {
+  padding: 10px;
+  margin-left: 20px;
+  font-size: 1.1em;
+  color: #8d8d8d;
+}
+.footer-bottom .footer-navlinks .nav-items a:hover {
+  color: #f9f9f9;
+}
+
+.footer-bottom .footer-navlinks .nav-items a:active {
+  color: #ffffff;
+  font-weight: 600;
+}
+.copyright {
+  margin-right: 30px;
+  color: #8d8d8d;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+/* ! *** Media *** */
+
+@media screen and (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .footer-bottom .footer-navlinks ul {
+    justify-content: center;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
