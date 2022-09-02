@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+footer {
+  background-color: #262626;
+  color: white;
+}
+footer h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+}
+.lorem-icons {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.lorem-icons .lorem-text {
+  font-size: 1.1em;
+  line-height: 2em;
+  color: #c3c3c3;
+}
+.lorem-icons .icons ul {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2em;
+  margin: 1em;
+}
+
+.somelinks {
+  display: flex;
+  justify-content: space-evenly;
+  flex: 2;
+}
+.somelinks li {
+  margin-bottom: 1em;
+}
+.somelinks li a {
+  margin-bottom: 1em;
+  color: #8e8e8e;
+}
+.somelinks li a:hover {
+  color: #eeeeee;
+}
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.newsletter .email input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+
+.newsletter .email input:focus {
+  -webkit-box-shadow: inset 0px 0px 4px 0px #000000;
+  box-shadow: inset 0px 0px 4px 0px #000000;
+}
+.newsletter .button-sub button {
+  width: 100%;
+  height: 40px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(267deg, rgba(255, 255, 255, 1) 0%, rgba(255, 213, 123, 1) 100%);
+  font-size: 1.3em;
+  border-radius: 5px;
+}
+
+.newsletter .button-sub button:hover {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(267deg, rgba(255, 255, 255, 1) 0%, rgba(203, 138, 0, 1) 100%);
+}
