@@ -1,0 +1,79 @@
+:root {
+  --nav-text-color: rgb(179, 179, 179);
+  --menu-text-color: rgb(105, 105, 105);
+  --sidebar-text-color: rgb(125, 125, 125);
+  --div-background-color: rgb(206, 206, 206);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Open Sans, sans-serif;
+  font-weight: 400;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 120px;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.global {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0px;
+}
+.global .global__site {
+  display: flex;
+}
+.global__site__service {
+  margin-right: 20px;
+}
+.global a,
+.global__person__account {
+  color: #777;
+}
+.global .global__person {
+  display: flex;
+  align-items: center;
+}
+.global__person__account {
+  margin-right: 30px;
+}
+.global__person__account .fa-circle-user {
+  font-size: 1.3rem;
+}
+.global__person__language ul {
+  display: flex;
+}
+
+.global__person__language ul .lang {
+  margin-right: 10px;
+  font-size: 0.9rem;
+}
+
+.global__person__language {
+  padding-top: 3px;
+}
+
+.sidebar-content {
+  display: flex;
+}
+.sidebar-content .sidebar {
+  width: 200px;
+  height: 400px;
+  background-color: var(--div-background-color);
+  margin-right: 30px;
+}
+
+.sidebar-content .content {
+  width: 100%;
+  height: 400px;
+  background-color: var(--div-background-color);
+}
