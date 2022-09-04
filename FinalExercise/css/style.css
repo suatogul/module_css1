@@ -16,7 +16,7 @@ body {
 main {
   display: flex;
   flex-direction: column;
-  padding: 0px 120px;
+  padding: 0% 10%;
 }
 a {
   text-decoration: none;
@@ -77,3 +77,60 @@ ul {
   height: 400px;
   background-color: var(--div-background-color);
 }
+/* 
+!-------------------------------------
+*/
+.header__container {
+  display: flex;
+  min-width: 992px;
+}
+.header__logo {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+.header__logo img {
+  width: 180px;
+  height: 65px;
+}
+.header__search {
+  flex: 0 0 75%;
+  max-width: 75%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.header__search__wrapper {
+  width: 100%;
+  display: flex;
+}
+.header__search__wrapper input {
+  height: 40px;
+  width: 100%;
+  padding-left: 35px;
+  font-size: 1rem;
+}
+.header__search__wrapper .button__suche {
+  margin-left: 10px;
+  flex: 0 0 35%;
+}
+.header__search__wrapper button {
+  height: 40px;
+  width: 90px;
+  background-color: black;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.input-holder {
+  position: relative;
+  flex: 0 0 65%;
+}
+.input-holder > label {
+  position: absolute;
+  top: 10px;
+  bottom: 0;
+  left: 10px;
+  width: 100%;
+  color: #777;
+}
+/* !======================================3rd block starts */
