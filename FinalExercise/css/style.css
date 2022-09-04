@@ -1,10 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Teko:wght@300;400&display=swap");
 :root {
   --nav-text-color: rgb(179, 179, 179);
   --menu-text-color: rgb(105, 105, 105);
   --sidebar-text-color: rgb(125, 125, 125);
   --div-background-color: #eaeaea;
 }
-* {
+*,
+:after,
+::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -213,12 +216,65 @@ ul {
   margin-left: 1.5rem;
 }
 
-.sidebar-content .content {
+/* *Main content */
+
+.sidebar-content .main__content {
   flex: 0 0 75%;
   max-width: 75%;
-  height: 400px;
   background-color: #fff;
+  margin-left: 1.5rem;
 }
-.content .content__wrapper {
-  background-color: var(--div-background-color);
+.main__content .content__wrapper {
+  display: flex;
+}
+.main__content .content__wrapper > div:first-child {
+  margin-right: 1.4rem;
+}
+.content__wrapper .content__container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f4f4;
+}
+.content__container .content__logo {
+  height: 4rem;
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+}
+
+.content__wrapper .content__container:first-child .content__logo {
+  display: flex;
+  align-items: center;
+}
+.content__container .content__logo img {
+  width: 80px;
+  height: 40px;
+}
+.content__container .content__picture img {
+  width: 425px;
+  height: 237px;
+}
+.content__container .content__text span {
+  font-family: "Teko", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 100;
+  color: rgb(52, 52, 52);
+  margin: 0%;
+  padding: 0%;
+}
+
+.content__container .content__text .percentage {
+  position: relative;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #e20713;
+}
+
+.content__container .content__text .percentage::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.15rem;
+  background-color: #e20713;
+  content: "";
 }
