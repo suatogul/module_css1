@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.25rem;
+}
+.container {
+  margin: 100px;
+}
+/* ul {
+  list-style: none;
+} */
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+.container__nav {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+  padding: 0 0.7rem 0 0.3rem;
+  border: 0.25rem solid #ececec;
+  background-color: #fff;
+}
+
+.triangle::before,
+.triangle::after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  content: "";
+  left: 1rem;
+  border-width: 0 1.3rem 0.8rem;
+}
+.triangle::before {
+  top: -0.85rem;
+  border-bottom-color: #ececec;
+}
+.triangle::after {
+  top: -0.55rem;
+  border-bottom-color: #fff;
+}
