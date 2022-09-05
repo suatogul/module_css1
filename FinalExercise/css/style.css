@@ -53,9 +53,13 @@ ul {
 }
 .global__person__account {
   margin-right: 30px;
+  cursor: pointer;
 }
 .global__person__account .fa-circle-user {
   font-size: 1.3rem;
+}
+.global__person .global__person__account:hover {
+  color: #343434;
 }
 .global__person__language ul {
   display: flex;
@@ -70,6 +74,10 @@ ul {
 }
 .global__person__language .lang__active {
   color: #343434;
+  cursor: default;
+}
+.global__person__language li:hover a:not(.lang__active) {
+  color: #e20713;
 }
 /* 
 !-------------------------------------
