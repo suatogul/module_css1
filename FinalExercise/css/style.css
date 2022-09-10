@@ -85,7 +85,9 @@ ul {
 /* 
 !-------------------------------------
 */
-
+.header {
+  padding: 0.5rem;
+}
 .header__container {
   display: flex;
 }
